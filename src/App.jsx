@@ -6,9 +6,11 @@ import Experience from './components/Experience/experience'
 import About from './components/About/about'
 import Footer from './components/Footer/footer'
 
+import './App.css'
+
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/Alyssa-Website">
             <div className="app">
                 <Navbar />
 
