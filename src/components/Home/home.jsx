@@ -4,7 +4,7 @@ import Links from './links/links'
 
 export default function Home(){
     return(
-        <div>
+        <div className={styles.home}>
             <Home_picDesc/>
             <Links/>
         </div>
