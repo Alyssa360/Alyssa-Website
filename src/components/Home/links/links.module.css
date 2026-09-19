@@ -1,0 +1,74 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Each link + name */
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* White circle */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Picture inside the circle */
+.circle img {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}
+
+/* Hover effect */
+.link:hover .circle {
+    background-color: white;
+    transform: scale(1.08);
+}
+
+/* Name underneath */
+.link p {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Phone */
+@media (max-width: 600px) {
+    .main_container {
+        gap: 15px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .circle {
+        width: 75px;
+        height: 75px;
+    }
+
+    .link p {
+        font-size: 13px;
+    }
+}
