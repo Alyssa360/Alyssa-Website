@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 100px;
-    margin-top: 40px;
+    gap: 90px;
     width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-/* Each link + name */
 .link {
     display: flex;
     flex-direction: column;
@@ -16,12 +17,12 @@
     color: white;
 }
 
-/* White circle */
 .circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: white;
+    border: 5px solid white;
+    background-color: #FFC0CB;
 
     display: flex;
     align-items: center;
@@ -32,20 +33,17 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Picture inside the circle */
 .circle img {
     width: 65%;
     height: 65%;
     object-fit: contain;
 }
 
-/* Hover effect */
 .link:hover .circle {
-    background-color: white;
+    background-color: #FFC0CB;
     transform: scale(1.08);
 }
 
-/* Name underneath */
 .link p {
     margin-top: 12px;
     margin-bottom: 0;
@@ -54,13 +52,19 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Tablet */
+@media (max-width: 900px) {
+    .main_container {
+        gap: 45px;
+    }
+}
+
 /* Phone */
 @media (max-width: 600px) {
     .main_container {
-        gap: 15px;
-        padding: 0 10px;
-        box-sizing: border-box;
+        gap: 25px;
         flex-wrap: wrap;
+        padding: 0 10px;
     }
 
     .circle {

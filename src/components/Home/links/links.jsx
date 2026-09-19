@@ -8,7 +8,7 @@ import styles from './links.module.css'
 
 const links = [
     {
-        name: 'Concordia Game Dev',
+        name: 'CGD',
         image: CGD_pic,
         url: 'https://www.concordiagamedev.ca/'
     },

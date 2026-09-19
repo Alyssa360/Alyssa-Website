@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-/* Round picture on the left */
+/* Profile picture */
 .profile_pic {
     width: 220px;
     height: 220px;
@@ -24,7 +24,7 @@
     flex-shrink: 0;
 }
 
-/* Dark purple rectangle on the right */
+/* Introduction box */
 .text_box_intro {
     background-color: #692749;
     padding: 30px 35px;
@@ -33,12 +33,35 @@
     box-sizing: border-box;
 }
 
-/* Introduction text */
 .intro_text {
     margin: 0;
     font-size: 18px;
     line-height: 1.6;
     color: white;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .main_div {
+        padding: 50px 5%;
+    }
+
+    .intro_div {
+        gap: 30px;
+    }
+
+    .profile_pic {
+        width: 180px;
+        height: 180px;
+    }
+
+    .text_box_intro {
+        padding: 25px;
+    }
+
+    .intro_text {
+        font-size: 16px;
+    }
 }
 
 /* Phone */

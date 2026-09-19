@@ -1,24 +1,22 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-import Home from './components/Home/home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Navbar from './components/NavBar/navbar'
-import { BrowserRouter } from 'react-router-dom'
-
-
+import Home from './components/Home/home'
+import Experience from './components/Experience/experience'
+import About from './components/About/about'
 
 function App() {
-  return (
-    <div className='App'>
-      <BrowserRouter>
-       <Navbar/>
-       <Home/>
-       </BrowserRouter>
-      
-    </div>
-  )
+    return (
+        <BrowserRouter>
+            <Navbar />
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </BrowserRouter>
+    )
 }
 
 export default App
